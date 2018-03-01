@@ -42,7 +42,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
-    }
+    },
+	disableHostCheck: true,
+	public: 'parkitect-marnit.dynv6.net'
   },
   plugins: [
     new webpack.DefinePlugin({
