@@ -59,7 +59,7 @@ a {
         self.downloading = true
 
         var itemId = workshoplink.match(/\d+$/)
-        axios.get('https://parkitect-api-marnit.dynv6.net/download', {
+        axios.get('https://parkitect-api-marnit.dynv6.net/download?item_id=' + itemId, {
           item_id: itemId
         })
         .then(function (response) {
